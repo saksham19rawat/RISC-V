@@ -1,0 +1,247 @@
+$date
+   Wed Jul 16 00:20:07 2025
+$end
+
+$version
+  2025.1.0
+  $dumpfile ("Single Cycle .vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module Single_Cycle_TOP_Tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$scope module Single_Cycle_Top $end
+$var wire 1 # clk $end
+$var wire 1 $ rst $end
+$var wire 32 % PC_Top [31:0] $end
+$var wire 32 & RD_Instr [31:0] $end
+$var wire 32 ' RD1_Top [31:0] $end
+$var wire 32 ( Imm_Extend_Top [31:0] $end
+$var wire 32 ) ALUControl_Top [31:0] $end
+$var wire 32 * ALUResult [31:0] $end
+$var wire 32 + ReadData [31:0] $end
+$var wire 32 , PCPlus4 [31:0] $end
+$var wire 1 - RegWrite $end
+$var wire 1 . RD_instr $end
+$var wire 1 / PC $end
+$scope module Program_Counter $end
+$var wire 32 , PC_NEXT [31:0] $end
+$var wire 1 $ rst $end
+$var wire 1 # clk $end
+$var reg 32 0 PC [31:0] $end
+$upscope $end
+$scope module Instruction_Memory $end
+$var wire 32 % A [31:0] $end
+$var wire 1 $ rst $end
+$var wire 32 1 RD [31:0] $end
+$upscope $end
+$scope module Register_File $end
+$var wire 1 # clk $end
+$var wire 1 $ rst $end
+$var wire 5 2 A1 [19:15] $end
+$var wire 5 3 A2 [4:0] $end
+$var wire 5 4 A3 [11:7] $end
+$var wire 32 + WD3 [31:0] $end
+$var wire 32 5 WE3 [31:0] $end
+$var wire 32 ' RD1 [31:0] $end
+$var wire 32 6 RD2 [31:0] $end
+$upscope $end
+$scope module Sign_Extend $end
+$var wire 32 & In [31:0] $end
+$var wire 32 ( Imm_Ext [31:0] $end
+$upscope $end
+$scope module ALU $end
+$var wire 32 ' A [31:0] $end
+$var wire 32 ( B [31:0] $end
+$var wire 3 7 ALUControl [2:0] $end
+$var wire 32 * Result [31:0] $end
+$var wire 1 8 Z $end
+$var wire 1 9 N $end
+$var wire 1 : V $end
+$var wire 1 ; C $end
+$var wire 1 < cout $end
+$var wire 32 = a_and_b [31:0] $end
+$var wire 32 > a_or_b [31:0] $end
+$var wire 32 ? not_b [31:0] $end
+$var wire 32 @ mux_1 [31:0] $end
+$var wire 32 A mux_2 [31:0] $end
+$var wire 32 B sum [31:0] $end
+$var wire 32 C slt [31:0] $end
+$var wire 1 D z $end
+$upscope $end
+$scope module Control_Unit_Top $end
+$var wire 7 E op5 [6:0] $end
+$var wire 7 F op [6:0] $end
+$var wire 7 G funct7 [6:0] $end
+$var wire 3 H funct3 [14:12] $end
+$var wire 3 7 ALUControl [2:0] $end
+$var wire 1 - RegWrite $end
+$var wire 1 I MemWrite $end
+$var wire 1 J ResultSrc $end
+$var wire 1 K Branch $end
+$var wire 1 L ALUSrc $end
+$var wire 2 M ImmSrc [1:0] $end
+$var wire 2 N ALUOp [1:0] $end
+$var wire 2 O ALUop [1:0] $end
+$var wire 1 P funct30 $end
+$scope module main_decoder $end
+$var wire 1 Q zero $end
+$var wire 7 F op [6:0] $end
+$var wire 1 - RegWrite $end
+$var wire 1 I MemWrite $end
+$var wire 1 J ResultSrc $end
+$var wire 1 L ALUSrc $end
+$var wire 1 R PCSrc $end
+$var wire 2 M ImmSrc [1:0] $end
+$var wire 2 N ALUOp [1:0] $end
+$var wire 1 K Branch $end
+$upscope $end
+$scope module alu_decoder $end
+$var wire 1 S op5 $end
+$var wire 1 T funct7 $end
+$var wire 1 U ALUop $end
+$var wire 3 V funct3 [2:0] $end
+$var wire 3 7 ALUControl [2:0] $end
+$var wire 2 W concatenation [1:0] $end
+$upscope $end
+$upscope $end
+$scope module Data_Memory $end
+$var wire 32 * A [31:0] $end
+$var wire 32 X WD [31:0] $end
+$var wire 1 # clk $end
+$var wire 1 $ rst $end
+$var wire 1 Y WE $end
+$var wire 32 + RD [31:0] $end
+$upscope $end
+$scope module PC_Adder $end
+$var wire 32 Z a [31:0] $end
+$var wire 32 [ b [31:0] $end
+$var wire 32 , c [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+b0 %
+bz &
+b0 '
+b11111111111111111111xxxxxxxxxxxx (
+bz00x )
+bx *
+bx +
+bx ,
+x-
+0.
+z/
+b0 0
+b0 1
+bz 2
+bz 3
+bz 4
+bzx 5
+b0 6
+b0x 7
+z8
+x9
+x:
+x;
+x<
+b0 =
+b11111111111111111111xxxxxxxxxxxx >
+b0xxxxxxxxxxxx ?
+bx @
+bx A
+bx B
+b0x C
+xD
+bz E
+bz F
+bz G
+bz H
+xI
+xJ
+xK
+xL
+bx M
+bx N
+bz O
+zP
+zQ
+xR
+zS
+zT
+zU
+bz V
+bz W
+bz X
+zY
+bz Z
+b100 [
+$end
+
+#50000
+1!
+1#
+
+#100000
+0!
+0#
+
+#150000
+1!
+1"
+1#
+1$
+bx %
+bx '
+x.
+bx 0
+bx 1
+bx 6
+bx =
+
+#200000
+0!
+0#
+
+#250000
+1!
+1#
+
+#300000
+0!
+0#
+
+#350000
+1!
+1#
+
+#400000
+0!
+0#
+
+#450000
+1!
+1#
+
+#500000
+0!
+0#
+
+#550000
+1!
+1#
+
+#600000
+0!
+0#

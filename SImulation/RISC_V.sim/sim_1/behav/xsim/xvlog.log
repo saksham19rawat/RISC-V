@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saksham rawat/RISC_V/RISC_V_KODE/RISCVSCC/Single_Cycle_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module P_C
+INFO: [VRFC 10-311] analyzing module Instr_Mem
+INFO: [VRFC 10-311] analyzing module Reg_File
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module alu_decoder
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saksham rawat/RISC_V/RISC_V_KODE/RISCVSCC/Test_Bench_RISC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Top_Tb
