@@ -1,5 +1,8 @@
 // results that gets lost in case we need it further as we have only 32 register
 // i.e if we need to save value of a addition value 
+/*The data memory has a single read/write port. If the write enable, WE, is 1, it writes data
+ WDinto address A on the rising edge of the clock. If the write enable is 0, it reads address A
+ onto RD.*/
 
 module Data_Memory(A,WD,RD,clk,WE,rst);
 
